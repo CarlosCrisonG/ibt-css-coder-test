@@ -45,41 +45,41 @@
     <!-- Responsive Navbar -->
     <section id="responsive-navbar" class="container-fluid">
       <div class="container d-flex justify-content-between">
-      <div id="logo" class="d-flex align-items-center"> <!--Logo-->
-        <img src="images/logo-temp.jpg" alt="IBT Media">
-      </div>
-
-      <div class="ibt-navigation d-flex flex-column my-3">
-        <div id="socials" class="d-flex flex-row justify-content-end my-2"> <!-- Socials Links -->
-          <i class="facebook fa-brands fa-facebook-f px-2"></i>
-          <i class="twitter fa-brands fa-twitter px-2"></i>
-          <i class="youtube fa-brands fa-youtube px-2"></i>
+        <div id="logo" class="d-flex align-items-center"> <!--Logo-->
+          <img src="images/logo-temp.jpg" alt="IBT Media">
         </div>
-        <nav id="desktop-menu"> <!-- Desktop Menu -->
-          <a class="nav-item px-2" href="">My</a>
-          <a class="nav-item px-2" href="">Test</a>
-          <a class="nav-item px-2" href="">News</a>
-          <a class="nav-item px-2" href="">Menu</a>
-          <a class="nav-item px-2" href="">Content</a>
-          <a class="nav-item px-2" href="">Dummy</a>
-          <a class="nav-item px-2" href="">Coding</a>
-          <a class="nav-item px-2" href=""><i class="fa-solid fa-magnifying-glass"></i></a>
-        </nav>
 
+        <div class="ibt-navigation d-flex flex-column my-3">
+          <div id="socials" class="d-flex flex-row justify-content-end my-2"> <!-- Socials Links -->
+            <i class="facebook fa-brands fa-facebook-f px-2"></i>
+            <i class="twitter fa-brands fa-twitter px-2"></i>
+            <i class="youtube fa-brands fa-youtube px-2"></i>
+          </div>
+          <nav id="desktop-menu"> <!-- Desktop Menu -->
+            <a class="nav-item px-2" href="">My</a>
+            <a class="nav-item px-2" href="">Test</a>
+            <a class="nav-item px-2" href="">News</a>
+            <a class="nav-item px-2" href="">Menu</a>
+            <a class="nav-item px-2" href="">Content</a>
+            <a class="nav-item px-2" href="">Dummy</a>
+            <a class="nav-item px-2" href="">Coding</a>
+            <a class="nav-item px-2" href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+          </nav>
+
+        </div>
+        <!-- Mobile Offcanvas Menu | Start -->
+        <div id="mySidepanel" class="sidepanel">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="#">Ofertas</a>
+          <a href="#">Tiendas Oficiales</a>
+          <a href="#">Vender</a>
+          <a href="#">Ayuda</a>
+          <a href="/register">Creá tu cuenta <i class="fa-solid fa-id-card"></i></a>
+          <a href="/login">Ingresá <i class="fa-solid fa-right-to-bracket"></i></a>
+          <a href="#">Mis compras <i class="fa-solid fa-basket-shopping"></i></a>
+        </div>
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
       </div>
-      <!-- Mobile Offcanvas Menu | Start -->
-      <div id="mySidepanel" class="sidepanel">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#">Ofertas</a>
-        <a href="#">Tiendas Oficiales</a>
-        <a href="#">Vender</a>
-        <a href="#">Ayuda</a>
-        <a href="/register">Creá tu cuenta <i class="fa-solid fa-id-card"></i></a>
-        <a href="/login">Ingresá <i class="fa-solid fa-right-to-bracket"></i></a>
-        <a href="#">Mis compras <i class="fa-solid fa-basket-shopping"></i></a>
-      </div>
-      <button class="openbtn" onclick="openNav()">&#9776;</button>
-    </div>
     </section>
 
     <!-- Off Canvas Side Panel -->
@@ -95,15 +95,44 @@
 
   <!--Main Content -->
   <main>
-    <!-- Banner Section -->
-    <section class="py-4">
+    <!-- Blog Section -->
+    <section id="blog" class="py-4">
       <div class="container text-center">
         <div class="row">
-          <div class="col-12 col-md-6">
-            <img class="main-news" src="images/meta.jpg" alt="Meta">
+          <div class="main-news col-12 col-md-6 p-3">
+            <article>
+              <img src="images/meta.jpg" alt="Meta">
+              <h3 class="category pt-3">My</h3>
+              <h2 class="main-article-title">Google Unveils Changes Before Strict EU Rules Kick In</h2>
+            </article>
           </div>
           <div class="col-12 col-md-6">
-            2 of 2
+            <div class="row">
+              <div class="secondary-news col-6 p-3">
+                <article>
+                  <img src="images/keyboard.jpg" alt="Keyboard">
+                  <h3 class="category pt-3">My</h3>
+                  <h2 class="sub-article-title">ONYX BOOX Tab Ultra Hands-on Review: E-Ink Tablet Made for Productivity</h2>
+                </article>
+                <article>
+                  <img src="images/dropbox.jpg" alt="Dropbox">
+                  <h3 class="category pt-3">My</h3>
+                  <h2 class="sub-article-title">AI-Powered Metahumans Are Driving Indonesia's Digital Transformation</h2>
+                </article>
+              </div>
+              <div class="secondary-news col-6 p-3">
+                <article>
+                  <img src="images/onlyfans.jpg" alt="Only Fans">
+                  <h3 class="category pt-3">My</h3>
+                  <h2 class="sub-article-title">X, The Former Twitter, Lets Users Hide Once-vaunted Blue Check</h2>
+                </article>
+                <article>
+                  <img src="images/conferencist.jpg" alt="Conferencist">
+                  <h3 class="category pt-3">My</h3>
+                  <h2 class="sub-article-title">MicroStrategy Reveals Another Bullish Plan After Making Biggest Bitcoin Purchase Since 2021</h2>
+                </article>
+              </div>
+            </div>
           </div>
         </div>
       </div>

@@ -10,9 +10,9 @@
 
 /*Color Variables*/
 :root {
-    --color-text: #5A5655;
-    --color-subtitle: #1BAABC;
-    --color-grey: #828282;
+    --color-text: #333446;
+    --color-category: #1BAABC;
+    --color-grey: #B6B6B6;
 }
 
 body {
@@ -61,7 +61,40 @@ body {
 /* Header Styles | End */
 
 /* Main Styles | Start */
-.main-news img {
-    width: 90%;
+.main-news {
+    border-right: 1px solid lightgrey;
+}
+
+.main-news img,
+.secondary-news img {
+    width: 100%;
+}
+
+.category {
+    color: var(--color-category);
+    text-transform: uppercase;
+    text-align: left;
+    font-size: 1em;
+}
+
+.main-article-title {
+    color: var(--color-text);
+    text-align: left;
+    font-size: 1.1em;
+}
+
+.secondary-news {
+    border-right: 1px solid lightgrey;
+    padding-bottom:100px;
+}
+
+.secondary-news article {
+    padding-bottom: 40px;
+}
+
+.sub-article-title {
+    font-size: 0.7em;
+    color: var(--color-text);
+    text-align: left;
 }
 /* Main Styles | End */

@@ -14,4 +14,11 @@
 }
 
 /*Desktop*/
-@media (min-width: 1024px) {}
+@media (min-width: 1024px) {
+    .main-article-title {
+        font-size: 1.65em;
+    }
+    .sub-article-title {
+        font-size: 1.2em;
+    }
+}
