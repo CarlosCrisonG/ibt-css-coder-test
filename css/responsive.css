@@ -1,0 +1,17 @@
+/*Smartphones*/
+@media (min-width: 320px) {}
+
+/*Tablets*/
+@media (min-width: 768px) {
+    #desktop-menu {
+        display: block;
+    }
+
+    .openbtn {
+        /*Ocultar Menu Mobile*/
+        display: none;
+    }
+}
+
+/*Desktop*/
+@media (min-width: 1024px) {}
