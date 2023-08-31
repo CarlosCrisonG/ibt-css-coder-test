@@ -21,4 +21,15 @@
     .sub-article-title {
         font-size: 1.2em;
     }
+    #footer-main-menu,
+    #footer-sub-menu {
+        justify-content: center;
+    }
+
+    #footer-main-menu .nav-item {
+        padding: 0px 20px;
+    }
+    #footer-sub-menu .nav-item {
+        padding: 0px 12px;
+    }
 }

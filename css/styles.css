@@ -98,3 +98,59 @@ body {
     text-align: left;
 }
 /* Main Styles | End */
+
+/* Footer Styles | Start */
+footer {
+    background-color: var(--color-grey);
+    color: white;
+}
+
+footer .container {
+    padding:0;
+}
+
+#logo-footer {
+    height: 50px;
+}
+
+#footer-main-menu {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+#footer-main-menu .nav-item {
+    padding: 0px 10px;
+}
+
+#footer-main-menu,
+#footer-main-menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#footer-sub-menu .nav-item {
+    padding: 0px 12px;
+}
+
+#footer-sub-menu {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 5px;
+}
+
+#footer-sub-menu,
+#footer-sub-menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-col {
+    padding: 0 !important;
+}
+
+.copyright {
+    font-size: 0.8em;
+}
+/* Footer Styles | End */
