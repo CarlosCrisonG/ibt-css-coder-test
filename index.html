@@ -8,13 +8,13 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
   <!-- Main Stylesheet -->
-  <link href="../css/styles.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
   <!-- Mobile Menu -->
-  <link href="../css/mobile_menu.css" rel="stylesheet">
+  <link href="css/mobile_menu.css" rel="stylesheet">
   <!-- Sticky Header Stylesheet -->
-  <link href="../css/sticky_header.css" rel="stylesheet">
+  <link href="css/sticky_header.css" rel="stylesheet">
   <!-- Responsive Styles -->
-  <link href="../css/responsive.css" rel="stylesheet">
+  <link href="css/responsive.css" rel="stylesheet">
   <title>IBT Media</title>
 
   <!-- Open Grapg Config -->
@@ -41,43 +41,49 @@
 </head>
 
 <body>
-  <header>
-    <!-- Responsive Navbar -->
-    <section id="responsive-navbar" class="container-fluid">
-      <div class="container d-flex justify-content-between">
-        <div id="logo" class="d-flex align-items-center"> <!--Logo-->
-          <img src="images/logo.svg" alt="IBT Media">
-        </div>
-        <div class="d-flex justify-content-end">
-          <div class="ibt-navigation d-flex flex-column my-3">
-            <div id="header-socials" class="d-flex flex-row justify-content-end my-2"> <!-- Socials Links -->
-              <a href="#"><img src="images/facebook.svg" alt="Facebook"></a>
-              <a href="#"><img src="images/twitter.svg" alt="Twitter"></a>
-              <a href="#"><img src="images/youtube.svg" alt="YouTube"></a>
+  <div class="sticky-header"> <!-- Sticky Header -->
+    <header>
+      <!-- Responsive Navbar -->
+      <section id="responsive-navbar" class="container-fluid">
+        <div class="container d-flex justify-content-between">
+          <div id="logo" class="d-flex align-items-center"> <!--Logo-->
+            <img src="images/logo.svg" alt="IBT Media">
+          </div>
+          <div class="d-flex justify-content-end">
+            <div class="ibt-navigation d-flex flex-column my-3">
+              <div id="header-socials" class="d-flex flex-row justify-content-end my-2"> <!-- Socials Links -->
+                <a href="#"><img src="images/facebook.svg" alt="Facebook"></a>
+                <a href="#"><img src="images/twitter.svg" alt="Twitter"></a>
+                <a href="#"><img src="images/youtube.svg" alt="YouTube"></a>
+              </div>
+              <nav id="desktop-menu"> <!-- Desktop Menu -->
+                <a class="nav-item px-2" href="#">My</a>
+                <a class="nav-item px-2" href="#">Test</a>
+                <a class="nav-item px-2" href="#">News</a>
+                <a class="nav-item px-2" href="#">Menu</a>
+                <a class="nav-item px-2" href="#">Content</a>
+                <a class="nav-item px-2" href="#">Dummy</a>
+                <a class="nav-item px-2" href="#">Coding</a>
+                <a class="nav-item px-2" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+              </nav>
             </div>
-            <nav id="desktop-menu"> <!-- Desktop Menu -->
-              <a class="nav-item px-2" href="#">My</a>
-              <a class="nav-item px-2" href="#">Test</a>
-              <a class="nav-item px-2" href="#">News</a>
-              <a class="nav-item px-2" href="#">Menu</a>
-              <a class="nav-item px-2" href="#">Content</a>
-              <a class="nav-item px-2" href="#">Dummy</a>
-              <a class="nav-item px-2" href="#">Coding</a>
-              <a class="nav-item px-2" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
-            </nav>
+            <!-- Off Canvas Side Panel -->
+            <div id="mySidepanel" class="sidepanel">
+              <a class="nav-item" href="#">My</a>
+              <a class="nav-item" href="#">Test</a>
+              <a class="nav-item" href="#">News</a>
+              <a class="nav-item" href="#">Menu</a>
+              <a class="nav-item" href="#">Content</a>
+              <a class="nav-item" href="#">Dummy</a>
+              <a class="nav-item" href="#">Coding</a>
+              <a class="nav-item" href="#"><input type="text" class="search-bar"><i class="fa-solid fa-magnifying-glass"></i></a>
+            </div>
+            <button class="openbtn" onclick="toggleMenu()"><span class="menu-icon-container">&#9776;</span></button>
           </div>
-          <!-- Off Canvas Side Panel -->
-          <div id="mySidepanel" class="sidepanel">
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Clients</a>
-            <a href="#">Contact</a>
-          </div>
-          <button class="openbtn" onclick="toggleMenu()"><span>&#9776;</span></button>
         </div>
-      </div>
-    </section>
-  </header>
+      </section>
+    </header>
+  </div>
 
   <!--Main Content -->
   <main>
@@ -170,7 +176,7 @@
     integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
     crossorigin="anonymous"></script>
   <!-- Menu Mobile -->
-  <script src="/js/mobile_menu.js"></script>
+  <script src="js/mobile_menu.js"></script>
   <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/3e4fcd4369.js" crossorigin="anonymous"></script>
   <!-- Sticky Header -->

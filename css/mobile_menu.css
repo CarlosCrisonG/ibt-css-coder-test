@@ -1,33 +1,28 @@
 /* The sidepanel menu */
 .sidepanel {
-  height: 250px;
-  /* Specify a height */
+  height: 100vh;
   width: 0;
-  /* 0 width - change this with JavaScript */
   position: fixed;
-  /* Stay in place */
   z-index: 1;
-  /* Stay on top */
   top: 72px;
   right: 0;
-  background-color: #111;
-  /* Black*/
+  background-color: #7AD1DB;
   overflow-x: hidden;
-  /* Disable horizontal scroll */
-  padding-top: 60px;
-  /* Place content 60px from the top */
+  padding-top: 10px;
   transition: 0.5s;
-  /* 0.5 second transition effect to slide in the sidepanel */
 }
 
 /* The sidepanel links */
 .sidepanel a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 25px;
-  color: #818181;
+  font-size: 1.1em;
+  font-weight: 500;
+  color: white;
   display: block;
   transition: 0.3s;
+  padding-top: 15px;
+  padding-left: 15px;
 }
 
 /* When you mouse over the navigation links, change their color */
@@ -44,13 +39,20 @@
   margin-left: 50px;
 }
 
+.menu-icon-container {
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  padding-top: 5px;
+}
+
 /* Style the button that is used to open the sidepanel */
 .openbtn {
   font-family: 'Roboto', sans-serif;
-  display: block;
   font-size: 20px;
-  transition: font-size 0.1s ease;
-  /* Transición suave */
+  transition: 0.5s;
   cursor: pointer;
   background-color: white;
   color: var(--color-text);
