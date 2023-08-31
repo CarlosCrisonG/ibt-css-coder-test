@@ -1,5 +1,8 @@
 # CSS Coder Test for Job Application at IBT
 
+## Created by:
+Carlos Crison Guevara
+
 ## NOTES
 - I used Bootstrap v5.3 to build most of the site, but I also used flex so you can check I also handle Pure CSS. After all developer cannot stick toa framework or library
 
