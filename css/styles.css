@@ -1,6 +1,8 @@
 /*Roboto - From Google Fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+/* font-family: 'Roboto', sans-serif; */
+
 /*Reset CSS*/
 * {
     margin: 0 px;
@@ -22,15 +24,11 @@ body {
 /* Header Styles | Start */
 
 #logo img {
-    height: 50px;
+    height: 40px;
 }
 
 .nav-item {
     text-transform: uppercase;
-}
-
-#mySidepanel {
-    display: none;
 }
 
 #desktop-menu {
@@ -45,17 +43,13 @@ body {
 }
 
 #responsive-navbar {
+    padding: 0;
     border-bottom: 1px solid var(--color-text);
 }
 
-.facebook {
-    color:#8199BF;
-}
-.twitter {
-    color:#7ECAFB;
-}
-.youtube {
-    color:#F37465;
+#header-socials img {
+    height: 14px;
+    padding: 0px 8px;
 }
 
 /* Header Styles | End */
@@ -85,7 +79,7 @@ body {
 
 .secondary-news {
     border-right: 1px solid lightgrey;
-    padding-bottom:100px;
+    padding-bottom: 100px;
 }
 
 .secondary-news article {
@@ -97,30 +91,33 @@ body {
     color: var(--color-text);
     text-align: left;
 }
+
 /* Main Styles | End */
 
 /* Footer Styles | Start */
 footer {
-    background-color: var(--color-grey);
+    background-color: #828282;
     color: white;
 }
 
 footer .container {
-    padding:0;
+    padding: 0;
 }
 
 #logo-footer {
     height: 50px;
+    padding-left: 18px;
 }
 
 #footer-main-menu {
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
+    padding-top: 10px;
 }
 
 #footer-main-menu .nav-item {
-    padding: 0px 10px;
+    padding: 5px 10px;
 }
 
 #footer-main-menu,
@@ -131,19 +128,22 @@ footer .container {
 }
 
 #footer-sub-menu .nav-item {
-    padding: 0px 12px;
+    padding: 5px 10px;
+    font-size: 0.9em;
 }
 
 #footer-sub-menu {
     display: flex;
     justify-content: flex-start;
-    padding-top: 5px;
+    flex-wrap: wrap;
+    padding-top: 10px;
 }
 
 #footer-sub-menu,
 #footer-sub-menu a {
     color: white;
     text-decoration: none;
+    font-weight: 400;
 }
 
 .footer-col {
@@ -153,4 +153,15 @@ footer .container {
 .copyright {
     font-size: 0.8em;
 }
+
+#footer-socials {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#footer-socials img {
+    height: 15px;
+    padding: 0px 10px;
+}
+
 /* Footer Styles | End */

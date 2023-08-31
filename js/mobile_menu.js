@@ -1,9 +1,12 @@
-/* Set the width of the sidebar to 250px (show it) */
-function openNav() {
-    document.getElementById("mySidepanel").style.width = "250px";
+function toggleMenu() {
+  var button = document.querySelector('.openbtn');
+  var sidepanel = document.querySelector("#mySidepanel");
+
+  if (sidepanel.style.width === "250px") {
+    sidepanel.style.width = "0";
+    button.innerHTML = '<span>&#9776;</span>';
+  } else {
+    sidepanel.style.width = "250px";
+    button.innerHTML = '<span>  X  </span>';
   }
-  
-  /* Set the width of the sidebar to 0 (hide it) */
-  function closeNav() {
-    document.getElementById("mySidepanel").style.width = "0";
-  }
+}
